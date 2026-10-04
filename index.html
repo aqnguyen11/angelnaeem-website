@@ -3,184 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Nguyen | Personal Profile</title>
+    <meta name="description" content="Angel Nguyen - SOC Analyst @ LONI | Information Systems &amp; Analytics (Cyber Risk) Student | LSU E. J. Ourso College of Business.">
+    <title>Angel Nguyen | LSU Information Systems &amp; Analytics</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Modern Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
 
-    <header>
-        <h1>Alex Nguyen</h1>
-        <p><strong>Senior Software Engineer &amp; Full-Stack Developer</strong></p>
-        <p>Location: San Francisco, CA | Email: <a href="mailto:alex.nguyen@example.com">alex.nguyen@example.com</a></p>
-        
-        <nav aria-label="Page navigation">
-            <p>
-                <a href="#about">About</a> |
-                <a href="#experience">Experience</a> |
-                <a href="#projects">Projects</a> |
-                <a href="#skills">Skills</a> |
-                <a href="#education">Education</a> |
-                <a href="#contact">Contact</a>
-            </p>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="hero-badge-wrap">
+                <span class="status-badge">
+                    <span class="status-indicator"></span>
+                    Louisiana State University &bull; Security Operations &amp; Cyber Risk
+                </span>
+            </div>
 
-    <hr>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I am a passionate software engineer with over 7 years of experience building reliable,
-                accessible, and high-performance web applications and distributed systems.
-            </p>
-            <p>
-                My focus centers on developer productivity, clean software design principles, and user-centric architecture.
-                When I am not coding, I enjoy contributing to open-source software, mentoring aspiring engineers, and hiking outdoors.
-            </p>
-        </section>
+            <h1>Angel Nguyen</h1>
+            <p class="hero-subtitle">SOC Analyst @ LONI | Information Systems &amp; Analytics (Cyber Risk) Student | LSU E. J. Ourso College of Business</p>
+            
+            <div class="hero-meta">
+                <span class="hero-meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Baton Rouge, LA
+                </span>
+                <span class="hero-meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    <a href="mailto:angu326@lsu.edu">angu326@lsu.edu</a>
+                </span>
+            </div>
+            
+            <nav aria-label="Page navigation">
+                <p>
+                    <a href="#about">About</a>
+                    <span class="nav-separator">&bull;</span>
+                    <a href="#experience">Experience</a>
+                    <span class="nav-separator">&bull;</span>
+                    <a href="#projects">Projects</a>
+                    <span class="nav-separator">&bull;</span>
+                    <a href="#skills">Skills</a>
+                    <span class="nav-separator">&bull;</span>
+                    <a href="#education">Education</a>
+                    <span class="nav-separator">&bull;</span>
+                    <a href="#contact">Contact</a>
+                    <span class="nav-separator">&bull;</span>
+                    <a href="resume.html" style="color: var(--accent-cyan); font-weight: 600;">Resume &rarr;</a>
+                </p>
+            </nav>
+        </header>
 
         <hr>
 
-        <section id="experience">
-            <h2>Work Experience</h2>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="card">
+                    <p>
+                        Hello! I am an Information Systems &amp; Analytics undergraduate student at Louisiana State University (LSU)
+                        with a concentration in Cyber Risk. I currently work as a SOC Analyst at the LSU LONI Security Operations Center,
+                        where I monitor real-time network traffic, investigate security events, and assist in cyber threat triage across Louisiana's statewide research network.
+                    </p>
+                    <p>
+                        My academic and professional focus bridges cybersecurity operations, SIEM log analysis, risk assessment frameworks,
+                        and business systems analysis. I am passionate about defending critical infrastructure, identifying indicators of compromise,
+                        and leveraging analytics to improve organizational security posture.
+                    </p>
 
-            <article>
-                <h3>Senior Software Engineer &mdash; CloudScale Solutions</h3>
-                <p><em>June 2022 &ndash; Present</em></p>
-                <ul>
-                    <li>Spearheaded migration of legacy monolith to containerized microservices, reducing deployment times by 45%.</li>
-                    <li>Designed and implemented real-time monitoring dashboards and API gateways handling over 10M daily requests.</li>
-                    <li>Mentored junior and mid-level engineers through structured 1-on-1 code reviews and technical design sessions.</li>
+                    <div class="highlight-chips">
+                        <span class="highlight-chip">🛡️ LSU LONI SOC Analyst</span>
+                        <span class="highlight-chip">🎓 Louisiana State University (LSU)</span>
+                        <span class="highlight-chip">🔒 Threat Monitoring &amp; Triage</span>
+                        <span class="highlight-chip">📊 Information Systems &amp; Analytics</span>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="experience">
+                <h2>Work Experience</h2>
+
+                <div class="timeline">
+                    <article class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>SOC Analyst</h3>
+                                <p class="company-title">LSU LONI Security Operations Center (SOC) &mdash; Baton Rouge, LA</p>
+                            </div>
+                            <span class="date-badge">Present</span>
+                        </div>
+                        <ul>
+                            <li>Monitor, analyze, and triage real-time security events, network traffic anomalies, and threat telemetry across the Louisiana Optical Network Infrastructure (LONI) and member institutions.</li>
+                            <li>Investigate alerts generated by SIEM, IDS/IPS, firewalls, and endpoint detection tools to identify potential indicators of compromise (IOCs) and malicious activity.</li>
+                            <li>Perform initial incident triage, document detailed investigation logs, and escalate critical security incidents following standard operating procedures.</li>
+                            <li>Collaborate with senior network and security engineers to analyze threat patterns, block malicious traffic, and strengthen network perimeter defenses.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="projects">
+                <h2>Selected Projects</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Project</th>
+                                <th>Description</th>
+                                <th>Focus Area</th>
+                                <th>Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong><a href="project.html" style="color: #ffffff; text-decoration: none;">TryHackMe Cybersecurity Labs &amp; Training</a></strong>
+                                </td>
+                                <td>Completed hands-on cybersecurity labs, guided rooms, and practical learning paths covering network security, threat detection, Linux fundamentals, and defensive security.</td>
+                                <td><span class="role-tag">Cyber Defense &bull; Hands-on Labs</span></td>
+                                <td>
+                                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                        <a class="project-link" href="project.html">
+                                            Project Details
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                        </a>
+                                        <a class="project-link" href="https://tryhackme.com/p/angu326" target="_blank" rel="noopener noreferrer">
+                                            TryHackMe Profile
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="skills">
+                <h2>Technical &amp; Analytical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category-card">
+                        <div class="skill-category-title">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            Security Programs &amp; Technologies
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Splunk Enterprise Security</span>
+                            <span class="skill-badge">Splunk SOAR</span>
+                            <span class="skill-badge">CrowdStrike</span>
+                            <span class="skill-badge">Microsoft Defender</span>
+                            <span class="skill-badge">Palo Alto Networks</span>
+                            <span class="skill-badge">Cisco Security</span>
+                            <span class="skill-badge">EDR &amp; Firewall Logs</span>
+                            <span class="skill-badge">OSINT Tools</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <div class="skill-category-title">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            Programming &amp; Query Languages
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">SPL (Search Processing Language)</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <div class="skill-category-title">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+                            Hardware, Systems &amp; Software
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">Microsoft 365</span>
+                            <span class="skill-badge">Custom PC Assembly</span>
+                            <span class="skill-badge">Hardware Diagnostics</span>
+                            <span class="skill-badge">Network Troubleshooting</span>
+                            <span class="skill-badge">System Configuration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <div class="skill-category-title">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            Spoken Languages &amp; Analysis
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge">English</span>
+                            <span class="skill-badge">Vietnamese</span>
+                            <span class="skill-badge">Spanish</span>
+                            <span class="skill-badge">Threat Investigation</span>
+                            <span class="skill-badge">Event Correlation</span>
+                            <span class="skill-badge">SOAR Playbooks</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="education">
+                <h2>Education &amp; Certifications</h2>
+                <ul class="edu-list">
+                    <li class="edu-item">
+                        <div class="edu-icon-wrap" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </div>
+                        <div class="edu-content">
+                            <strong>Louisiana State University (LSU) &mdash; Graduating May 2028</strong>
+                            <span class="edu-sub"><strong>Bachelor of Science in Information Systems &amp; Analytics</strong> &bull; Concentration: Cyber Risk &bull; Baton Rouge, LA</span>
+                            <p style="margin-top: 0.35rem; font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">
+                                <strong style="color: #cbd5e1;">Related Coursework:</strong> Intro to Management Information Systems, Foundations of Information Systems, Computer Science I &amp; II
+                            </p>
+                        </div>
+                    </li>
+                    <li class="edu-item">
+                        <div class="edu-icon-wrap" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+                        </div>
+                        <div class="edu-content">
+                            <strong>TekStream Associate Security Analyst Certified Bronze &ndash; Level 1</strong>
+                            <span class="edu-sub">TekStream Solutions &bull; Cybersecurity &amp; Security Operations Center (SOC) Certification</span>
+                        </div>
+                    </li>
                 </ul>
-            </article>
+            </section>
 
-            <article>
-                <h3>Software Engineer &mdash; NovaTech Labs</h3>
-                <p><em>August 2019 &ndash; May 2022</em></p>
-                <ul>
-                    <li>Developed full-stack web features and RESTful endpoints using standard web protocols and relational databases.</li>
-                    <li>Collaborated with product designers and QA teams to maintain WCAG 2.1 accessibility standards across core workflows.</li>
-                    <li>Refactored query execution patterns to improve database throughput and decrease query latency by 30%.</li>
-                </ul>
-            </article>
-        </section>
+            <hr>
 
-        <hr>
+            <section id="contact">
+                <h2>Get In Touch</h2>
+                
+                <div class="contact-layout">
+                    <div class="contact-info-card">
+                        <p>I welcome opportunities to connect regarding cyber risk internships, analytics roles, student organizations, or academic collaborations:</p>
 
-        <section id="projects">
-            <h2>Selected Projects</h2>
+                        <ul class="contact-channels">
+                            <li class="contact-channel-item">
+                                <a href="mailto:angu326@lsu.edu">
+                                    <svg class="channel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                    <span><strong>Email:</strong> angu326@lsu.edu</span>
+                                </a>
+                            </li>
+                            <li class="contact-channel-item">
+                                <a href="https://github.com/aqnguyen11" target="_blank" rel="noopener noreferrer">
+                                    <svg class="channel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    <span><strong>GitHub:</strong> github.com/aqnguyen11</span>
+                                </a>
+                            </li>
+                            <li class="contact-channel-item">
+                                <a href="https://www.linkedin.com/in/angel-nguyen-9bbaa5247" target="_blank" rel="noopener noreferrer">
+                                    <svg class="channel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    <span><strong>LinkedIn:</strong> linkedin.com/in/angel-nguyen-9bbaa5247</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Project</th>
-                        <th>Description</th>
-                        <th>Role</th>
-                        <th>Links</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>DataFlow Engine</strong></td>
-                        <td>High-throughput batch stream processor and analytics pipeline.</td>
-                        <td>Lead Developer</td>
-                        <td><a href="https://github.com" target="_blank" rel="noopener noreferrer">Source Code</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>DocuSync</strong></td>
-                        <td>Offline-first collaborative markdown editor with revision tracking.</td>
-                        <td>Sole Creator</td>
-                        <td><a href="https://github.com" target="_blank" rel="noopener noreferrer">Source Code</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>NetMonitor CLI</strong></td>
-                        <td>Lightweight command-line utility for network latency and packet analysis.</td>
-                        <td>Maintainer</td>
-                        <td><a href="https://github.com" target="_blank" rel="noopener noreferrer">Source Code</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <dl>
-                <dt><strong>Languages:</strong></dt>
-                <dd>Python, Go, JavaScript, TypeScript, SQL, HTML5</dd>
-
-                <dt><strong>Frameworks &amp; Runtimes:</strong></dt>
-                <dd>Node.js, Express, Django, FastAPI, React</dd>
-
-                <dt><strong>Databases &amp; Storage:</strong></dt>
-                <dd>PostgreSQL, MySQL, Redis, MongoDB</dd>
-
-                <dt><strong>DevOps &amp; Infrastructure:</strong></dt>
-                <dd>Docker, Kubernetes, AWS, Linux, Git, CI/CD Pipelines</dd>
-            </dl>
-        </section>
+                    <fieldset class="contact-form-card">
+                        <legend>Quick Contact Form</legend>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Opportunity, inquiry, or greeting">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Share your message or inquiry..." required></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary">
+                                    Send Message
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </button>
+                                <button type="reset" class="btn-secondary">Reset</button>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+            </section>
+        </main>
 
         <hr>
 
-        <section id="education">
-            <h2>Education &amp; Certifications</h2>
-            <ul>
-                <li>
-                    <strong>B.S. in Computer Science</strong> &mdash; University of California, Berkeley (2015 &ndash; 2019)
-                </li>
-                <li>
-                    <strong>AWS Certified Solutions Architect &ndash; Associate</strong> (Issued: 2023)
-                </li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>Feel free to reach out for collaborations, speaking engagements, or engineering inquiries:</p>
-
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:alex.nguyen@example.com">alex.nguyen@example.com</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/alexnguyen</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexnguyen</a></li>
-            </ul>
-
-            <fieldset>
-                <legend>Quick Contact Form</legend>
-                <form action="#" method="post">
-                    <p>
-                        <label for="name">Your Name:</label><br>
-                        <input type="text" id="name" name="name" required>
-                    </p>
-                    <p>
-                        <label for="email">Your Email:</label><br>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-                    <p>
-                        <label for="subject">Subject:</label><br>
-                        <input type="text" id="subject" name="subject">
-                    </p>
-                    <p>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="40" required></textarea>
-                    </p>
-                    <p>
-                        <button type="submit">Send Message</button>
-                        <button type="reset">Reset</button>
-                    </p>
-                </form>
-            </fieldset>
-        </section>
-    </main>
-
-    <hr>
-
-    <footer>
-        <p>&copy; 2026 Alex Nguyen. All rights reserved.</p>
-        <p><small>Built strictly with raw HTML &bull; <a href="#top">Back to top</a></small></p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Angel Nguyen. All rights reserved.</p>
+            <p>
+                <small>Louisiana State University &bull; 
+                    <a href="#top" class="back-to-top">
+                        Back to top &uarr;
+                    </a>
+                </small>
+            </p>
+        </footer>
+    </div>
 
 </body>
 </html>

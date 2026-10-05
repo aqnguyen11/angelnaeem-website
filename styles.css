@@ -737,136 +737,161 @@ table td strong {
    Contact Section & Form
    ========================================================================== */
 
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 2rem;
-  align-items: start;
-}
+/* ==========================================================================
+   Contact Section & Direct Networking Hub
+   ========================================================================== */
 
-@media (max-width: 768px) {
-  .contact-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
-.contact-info-card {
+.contact-hub-card {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 2.25rem;
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-}
-
-.contact-info-card p {
-  color: var(--text-secondary);
-  font-size: 0.98rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.contact-channels {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-channel-item a {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-md);
-  background: rgba(17, 24, 39, 0.6);
-  border: 1px solid rgba(59, 130, 246, 0.15);
-  color: var(--text-secondary);
-  font-size: 0.92rem;
+  position: relative;
+  overflow: hidden;
   transition: all var(--transition-normal);
 }
 
-.contact-channel-item a:hover {
+.contact-hub-card:hover {
+  border-color: var(--border-card-hover);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-hub-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.4), transparent);
+  pointer-events: none;
+}
+
+.contact-hub-intro {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.contact-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.contact-card-item {
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.contact-card-item:hover {
   background: rgba(30, 58, 138, 0.25);
   border-color: var(--accent-blue-400);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(59, 130, 246, 0.25);
+  transform: translateY(-3px);
+}
+
+.contact-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.contact-icon-bubble {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(30, 58, 138, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-cyan);
+  transition: all var(--transition-normal);
+}
+
+.contact-card-item:hover .contact-icon-bubble {
+  background: var(--accent-blue-600);
   color: #ffffff;
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+  border-color: var(--accent-blue-400);
+}
+
+.contact-type-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+}
+
+.contact-channel-title {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.contact-card-value {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  word-break: break-all;
+  font-family: var(--font-sans);
+}
+
+.contact-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent-blue-400);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.contact-card-item:hover .contact-card-action {
+  color: #ffffff;
+  padding-left: 0.25rem;
+}
+
+.contact-card-action svg {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--transition-normal);
+}
+
+.contact-card-item:hover .contact-card-action svg {
   transform: translateX(4px);
 }
 
-.channel-icon {
-  width: 20px;
-  height: 20px;
-  color: var(--accent-cyan);
-  min-width: 20px;
-}
-
-/* Contact Form */
-fieldset.contact-form-card {
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-lg);
-  background: var(--bg-card);
-  padding: 2rem;
-  box-shadow: var(--shadow-md);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-legend {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.15rem;
-  padding: 0 0.5rem;
-  margin-left: -0.5rem;
-  margin-bottom: 1rem;
-}
-
-.form-group {
-  margin-bottom: 1.25rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  margin-bottom: 0.4rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background: var(--bg-input);
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  transition: all var(--transition-normal);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent-blue-500);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25), 0 0 15px rgba(59, 130, 246, 0.15);
-  background: rgba(15, 23, 42, 0.95);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--text-dim);
-}
-
-.form-actions {
+.contact-hub-footer {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.92rem;
+  color: var(--text-muted);
 }
 
 .btn-primary {
